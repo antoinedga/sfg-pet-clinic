@@ -1,4 +1,4 @@
-package com.example.sfgpetclinic.model;
+package com.example.model;
 
 public class Vet extends Person {
 

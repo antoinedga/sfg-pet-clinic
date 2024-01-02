@@ -13,6 +13,7 @@
 		<module>pet-clinic-data</module>
 		<module>pet-clinic-web</module>
 	</modules>
+	<packaging>pom</packaging>
 	<groupId>com.example</groupId>
 	<artifactId>sfg-pet-clinic</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -32,4 +33,20 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
