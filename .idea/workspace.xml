@@ -4,17 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca6f1b1f-037e-4635-a4df-4f5b2f4be19f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sfg-pet-clinic.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/sfgpetclinic/SfgPetClinicApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+    <list default="true" id="ca6f1b1f-037e-4635-a4df-4f5b2f4be19f" name="Changes" comment="did the base entity inheritance and imported the static resources. close #9">
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/static/resources/css/petclinic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/static/resources/fonts/montserrat-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/static/resources/fonts/montserrat-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/static/resources/fonts/montserrat-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/static/resources/fonts/montserrat-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/static/resources/fonts/varela_round-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/static/resources/fonts/varela_round-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/static/resources/fonts/varela_round-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/static/resources/fonts/varela_round-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/static/resources/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/static/resources/images/pets.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/static/resources/images/spring-logo-dataflow-mobile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/static/resources/images/spring-logo-dataflow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/static/resources/images/spring-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/pet-clinic-data.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/pet-clinic-data.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/example/model/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/example/model/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/example/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/example/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/example/services/map/AbstractMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/example/services/map/AbstractMapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/pet-clinic-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/pet-clinic-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/example/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/example/bootstrap/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/example/controllers/OwnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/example/controllers/OwnerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/example/controllers/VetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/example/controllers/VetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/owners/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/owners/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/vets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/vets/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,17 +48,16 @@
 }</component>
   <component name="ProjectId" id="2XdffKYzsHFJW1lkbtJioXvSzfj" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/antoinedga/Documents/IdeaProjects/pet-clinic/sfg-pet-clinic",
+    "last_opened_file_path": "/Users/antoinedga/Documents/IdeaProjects/pet-clinic/sfg-pet-clinic/pet-clinic-web/src/main/resources/static/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,6 +68,21 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pet-clinic-web/src/main/resources/static/resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SfgPetClinicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="pet-clinic-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.SfgPetClinicApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,10 +96,15 @@
       <workItem from="1698964592834" duration="696000" />
       <workItem from="1704174693240" duration="1334000" />
       <workItem from="1704176097740" duration="59000" />
+      <workItem from="1704997958064" duration="832000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="did the base entity inheritance and imported the static resources. close #9" />
+    <option name="LAST_COMMIT_MESSAGE" value="did the base entity inheritance and imported the static resources. close #9" />
   </component>
 </project>

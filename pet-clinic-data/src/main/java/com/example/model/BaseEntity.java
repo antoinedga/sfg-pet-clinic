@@ -4,9 +4,15 @@ import lombok.Data;
 import lombok.ToString;
 
 import java.io.Serializable;
-@Data
 public class BaseEntity implements Serializable {
     @ToString.Exclude
     private Long id;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }
