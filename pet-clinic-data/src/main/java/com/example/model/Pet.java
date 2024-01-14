@@ -3,8 +3,18 @@ package com.example.model;
 import java.time.LocalDate;
 import com.example.model.*;
 public class Pet extends BaseEntity {
+    private String name;
     private Owner owner;
-    private PetType type;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    private PetType petType;
     private LocalDate birthDate;
 
     public Owner getOwner() {
@@ -15,12 +25,12 @@ public class Pet extends BaseEntity {
         this.owner = owner;
     }
 
-    public PetType getType() {
-        return this.type;
+    public PetType getPetType() {
+        return this.petType;
     }
 
-    public void setType(PetType type) {
-        this.type = type;
+    public void setPetType(PetType petType) {
+        this.petType = petType;
     }
 
     public LocalDate getBirthDate() {
