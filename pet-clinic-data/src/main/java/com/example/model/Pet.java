@@ -2,9 +2,22 @@ package com.example.model;
 
 import java.time.LocalDate;
 import com.example.model.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+
+
+@Entity
 public class Pet extends BaseEntity {
     private String name;
+    @ManyToOne
+    @JoinColumn(name = "owner_id")
     private Owner owner;
+
+    @ManyToOne
+    @JoinColumn(name = "type_id")
+    private PetType petType;
+    private LocalDate birthDate;
 
     public String getName() {
         return name;
@@ -13,10 +26,6 @@ public class Pet extends BaseEntity {
     public void setName(String name) {
         this.name = name;
     }
-
-    private PetType petType;
-    private LocalDate birthDate;
-
     public Owner getOwner() {
         return this.owner;
     }
