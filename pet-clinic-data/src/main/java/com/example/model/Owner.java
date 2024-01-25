@@ -10,7 +10,6 @@ import java.util.Set;
 
 
 @Entity
-@Table(name = "bitches")
 public class Owner extends Person {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
     private Set<Pet> pets = new HashSet<>();
