@@ -6,9 +6,11 @@ import java.util.Set;
 
 import com.example.model.*;
 import jakarta.persistence.*;
+import lombok.Data;
 
 
 @Entity
+@Data
 public class Pet extends BaseEntity {
     private String name;
     @ManyToOne
@@ -21,34 +23,4 @@ public class Pet extends BaseEntity {
     private LocalDate birthDate;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
     private Set<Visit> visits = new HashSet<>();
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-    public Owner getOwner() {
-        return this.owner;
-    }
-
-    public void setOwner(Owner owner) {
-        this.owner = owner;
-    }
-
-    public PetType getPetType() {
-        return this.petType;
-    }
-
-    public void setPetType(PetType petType) {
-        this.petType = petType;
-    }
-
-    public LocalDate getBirthDate() {
-        return this.birthDate;
-    }
-
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
-    }
 }

@@ -1,33 +1,35 @@
 package com.example.bootstrap;
 
 import com.example.model.*;
-import com.example.services.OwnerService;
-import com.example.services.PetTypeService;
-import com.example.services.SpecialityService;
-import com.example.services.VetService;
+import com.example.services.*;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 
 @Component
+@Slf4j
 public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialityService specialityService;
+    private final VisitService visitService;
 
 
-
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService,
+                      SpecialityService specialityService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialityService = specialityService;
+        this.visitService = visitService;
     }
     @Override
     public void run(String... args) throws Exception {
+        log.info("hello world, its a me lombok");
         int count = petTypeService.findAll().size();
         if (count == 0) {
             loadData();
@@ -101,5 +103,13 @@ public class DataLoader implements CommandLineRunner {
 
         vetService.save(vet2);
         System.out.println("Loaded Vet");
+
+        Visit visit = new Visit();
+        visit.setPet(andreaPet);
+        visit.setDate(LocalDate.now());
+        visit.setDescription("sunny bunny eating dirt");
+
+        visitService.save(visit);
+
     }
 }

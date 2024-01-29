@@ -6,8 +6,8 @@ import jakarta.persistence.MappedSuperclass;
 import lombok.Data;
 import lombok.Getter;
 
-@Data
 @MappedSuperclass
+@Data
 public class Person extends BaseEntity {
 
     @Column(name = "first_name")
