@@ -10,6 +10,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @MappedSuperclass
+@ToString
 public class Person extends BaseEntity {
 
     @Column(name = "first_name")
